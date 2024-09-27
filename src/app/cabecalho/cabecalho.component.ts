@@ -7,6 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CabecalhoComponent implements OnInit {
 
+  teste = 'TESTANDO123';
   constructor() { }
 
   ngOnInit(): void {
