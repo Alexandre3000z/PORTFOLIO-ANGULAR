@@ -1,32 +1,38 @@
 <section class="container criar-pensamentos ff-inter">
-<header class="header">
-<div style="display: flex; flex-direction: column; align-items: center;">
-<p>Olá isso é meu projeto</p>
-<br>
-<img src="../../assets/images/modelo1.png" alt="testando angular"/>
-</div>
-<div>
-  <form style="font-size: 70px;">
-  <label for="autoria">Autoria</label>
-  <input
-    type="textarea"
-    class="input"
-    id="autoria"
-    name="autoria"
-    placeholder="Digite o Autoria"
-    [(ngModel)] = "teste"/>
+  <header class="header">
+    <div class="header-content">
+      <p>Olá isso é meu projeto</p>
+      <br>
+      <img src="../../assets/images/modelo1.png" alt="testando angular"/>
+    </div>
+    <div>
+      <!-- Relógio em tempo real -->
+      <div class="relogio">
+        Hora Atual: {{ horaAtual }}
+      </div>
 
-  </form>
-  {{teste}}
-  <form style="font-size: 70px;">
-  <label for="Pensamento">Pensamento</label>
-  <input
-    type="textarea"
-    class="input"
-    id="Pensamento"
-    name="Pensamento"
-    placeholder="Digite o Pensamento"/>
-  </form>
-</div>
-</header>
+      <form>
+        <label for="autoria">Autoria</label>
+        <input
+          type="text"
+          class="input"
+          id="autoria"
+          name="autoria"
+          placeholder="Digite o Autoria"
+          value=""
+        />
+      </form>
+      <form>
+        <br/>
+        <br/>
+        <label for="pensamento">Pensamento</label>
+        <textarea
+          class="input"
+          id="pensamento"
+          name="pensamento"
+          placeholder="Digite o Pensamento"
+        ></textarea>
+      </form>
+    </div>
+  </header>
 </section>

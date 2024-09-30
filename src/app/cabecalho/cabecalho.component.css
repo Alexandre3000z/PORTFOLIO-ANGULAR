@@ -34,7 +34,28 @@ h2 {
   margin-right: auto;
   margin-left: auto;
 }
+.header-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 
+.form {
+  font-size: 70px;
+}
+
+.input {
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+  box-sizing: border-box;
+}
+
+.relogio {
+  font-size: 28px;
+  margin-bottom: 20px;
+  font-family: 'Arial', sans-serif;
+}
 .botao {
   background: #154580;
   color: #ffffff;
@@ -51,6 +72,7 @@ h2 {
   border: 2px solid #84EEC1;
   color: #84EEC1;
 }
+
 
 @media (min-width: 576px) {
   .container {
@@ -72,3 +94,4 @@ h2 {
       width: 1140px;
   }
 }
+
