@@ -12,12 +12,11 @@
 .ff-roboto-mono {
   font-family: "Roboto Mono", monospace;
 }
-body,
-html {
+body,html {
   margin: 0;
   padding: 0;
   height: 100%;
-  background-color: "#D7D7D7";
+  background-color: #d7d7d7;
 }
 
 .diagonal-background {

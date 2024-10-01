@@ -1,17 +1,31 @@
 .background {
-  height: 100vh; /* 100% da altura da viewport */
+   /* 100% da altura da viewport */
   background-color: #d7d7d7;
   display: flex;
   justify-content: center;
   font-family: "Montserrat";
-
 }
 
 h1 {
   position: flex;
   justify-items: center;
-  font-size: 70px;
+  font-size: 45px;
   margin-top: 60px;
   border: 5px solid black;
   padding: 20px; /* Espaço entre o texto e a borda */
+  padding-left: 70px;
+  padding-right: 70px;
+}
+.textosobre {
+  display: flex;
+  justify-content: center;
+  margin-left: 12px;
+  font-family: 'Calibri';
+  font-size: 17px;
+  margin-top: 25px;
+  padding: 0 400px; /* Adiciona espaçamento de 20px nas laterais */
+  box-sizing: border-box; /* Garante que o padding não afete o tamanho total do contêiner */
+  width: 100%; /* Garante que o contêiner ocupe toda a largura */
+  font-weight: bolder;
+  color: rgb(87, 83, 83);
 }
