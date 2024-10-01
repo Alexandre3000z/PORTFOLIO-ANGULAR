@@ -1,75 +1,129 @@
 /* You can add global styles to this file, and also import other style files */
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;500;600;700;800;900&family=Roboto+Mono:wght@100;200;300;400;500;600;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;500;600;700;800;900&family=Roboto+Mono:wght@100;200;300;400;500;600;700&display=swap");
 
 * {
   margin: 0;
   padding: 0;
 }
 
-.ff-inter { font-family: 'Inter', sans-serif; }
-.ff-roboto-mono { font-family: 'Roboto Mono', monospace; }
-
-h1 {
-  position: absolute;
-  height: 1px;
-  width: 1px;
-  overflow: hidden;
+.ff-inter {
+  font-family: "Inter", sans-serif;
+}
+.ff-roboto-mono {
+  font-family: "Roboto Mono", monospace;
+}
+body,
+html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  background-color: "#D7D7D7";
 }
 
-h2 {
-  color: #154580;
+.diagonal-background {
+  height: 100vh; /* 100% da altura da viewport */
+  background: linear-gradient(100deg, #d7d7d7 52%, black 50%);
+  display: flex;
+}
+
+.hi {
+  margin-top: 351px; /* 50 pixels do topo */
+  margin-left: 256px; /* 100 pixels da esquerda */
+  font-family: "Raleway";
+  font-size: 40px;
   font-weight: bold;
-  font-size: 2rem;
-  text-align: center;
 }
-
-.header {
-  margin: 1rem auto 2rem;
+.Alexandre {
+  position: flex;
+  margin-top: 6px; /* 50 pixels do topo */
+  margin-left: 250px; /* 100 pixels da esquerda */
+  font-family: "Raleway";
+  font-size: 90px;
+  font-weight: bold;
 }
-
+.AlexandreDesc {
+  color: darkgrey;
+  margin-left: 255px; /* 100 pixels da esquerda */
+  font-family: "Raleway";
+  font-size: 25px;
+  font-weight: bolder;
+}
+.quadradinho {
+  position: flex;
+  display: flex;
+  margin-top: 140px;
+  margin-left: 250px;
+  background-color: "#C4C4C4";
+  width: 65px;
+  height: 65px;
+  align-items: center; /* Centraliza verticalmente */
+  justify-content: center; /* Centraliza horizontalmente */
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); /* Sombra leve */
+}
+.cardsimg {
+  width: 70%;
+  height: 70%;
+}
 .container {
-  padding-right: 1rem;
-  padding-left: 1rem;
-  padding-top: 1rem;
-  padding-bottom: 1rem;
-  margin-right: auto;
-  margin-left: auto;
+  display: flex;
+  height: 100%;
+}
+.texto-navbar {
+  color: white;
+  margin-top: 18px;
+  margin-left: 230px;
+  position: flex;
+  font-family: "Raleway";
+  font-size: 18px;
+  font-weight: bold;
+  display: flex; /* Utiliza flexbox */
+  gap: 40px; /* Ajuste o valor conforme necessário */
+  align-items: center;
+
+}
+.contato {
+  background-color: white;
+  color: black;
+  width: 130px;
+  height: 40px;
+  display: flex;
+  align-items: center; /* Centraliza verticalmente */
+  justify-content: center; /* Centraliza horizontalmente */
+  border-radius: 18px;
+  font-family: "Raleway", sans-serif; /* Fonte consistente */
+  font-size: 17px; /* Ajuste conforme necessário */
+  font-weight: bold;
+  cursor: pointer; /* Muda o cursor para indicar que é clicável */
+  text-align: center; /* Centraliza o texto */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Adiciona uma leve sombra */
+  transition: background-color 0.3s ease; /* Transição suave para hover */
 }
 
-.botao {
-  background: #154580;
-  color: #ffffff;
-  max-width: 270px;
-  width: 250px;
-  padding: 1rem;
-  margin: 0 auto;
-  border: 2px solid #154580;
-  border-radius: 10px;
-  transition: 0.5s ease;
+.contato:hover {
+  background-color: #f0f0f0; /* Cor de fundo ao passar o mouse */
+}
+.coluna-esquerda,
+.coluna-direita {
+  flex: 1;
+  padding: 20px; /* Permite rolagem vertical se o conteúdo for muito longo */
 }
 
-.botao:hover {
-  border: 2px solid #84EEC1;
-  color: #84EEC1;
-}
-
-@media (min-width: 576px) {
-  .container {
-      width: 540px;
+@media (max-width: 1600px) {
+  .hi {
+    margin-left: 100px;
+    margin-top: 170px;
   }
-}
-@media (min-width: 768px) {
-  .container {
-      width: 720px;
+  .Alexandre{
+    margin-left: 106px;
   }
-}
-@media (min-width: 992px) {
-  .container {
-      width: 960px;
+  .AlexandreDesc{
+    margin-left: 120px;
   }
-}
-@media (min-width: 1200px) {
-  .container {
-      width: 1140px;
+  .quadradinho{
+    margin-left: 140px;
+  }
+  .texto-navbar{
+    margin-left: 200px;
+    gap: 25px;
   }
 }
