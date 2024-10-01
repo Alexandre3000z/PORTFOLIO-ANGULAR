@@ -1,6 +1,8 @@
 <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
 
-<router-outlet></router-outlet>
+<div [@routeAnimations]="prepareRoute(outlet)">
+  <router-outlet #outlet="outlet"></router-outlet>
+</div>
 <head>
   <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;300;400;500;700&display=swap" rel="stylesheet">
 </head>
