@@ -1,0 +1,17 @@
+.background {
+  height: 100vh; /* 100% da altura da viewport */
+  background-color: #d7d7d7;
+  display: flex;
+  justify-content: center;
+  font-family: "Montserat";
+  font-weight: bold;
+}
+
+h1 {
+  position: flex;
+  justify-items: center;
+  font-size: 70px;
+  margin-top: 60px;
+  border: 5px solid black;
+  padding: 20px; /* Espaço entre o texto e a borda */
+}
