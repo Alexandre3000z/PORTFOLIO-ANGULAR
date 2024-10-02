@@ -1,5 +1,5 @@
 .background {
-   /* 100% da altura da viewport */
+  /* 100% da altura da viewport */
   background-color: #d7d7d7;
   display: flex;
   justify-content: center;
@@ -20,7 +20,7 @@ h1 {
   display: flex;
   justify-content: center;
   margin-left: 12px;
-  font-family: 'Calibri';
+  font-family: "Calibri";
   font-size: 17px;
   margin-top: 25px;
   padding: 0 400px; /* Adiciona espaçamento de 20px nas laterais */
@@ -29,3 +29,40 @@ h1 {
   font-weight: bolder;
   color: rgb(87, 83, 83);
 }
+.textosobre2 {
+  display: flex;
+  font-family: "Calibri";
+  font-size: 17px;
+  margin-top: 25px;
+  max-width: 470px; /* Define uma largura máxima para o texto */
+  box-sizing: border-box; /* Garante que o padding não afete o tamanho total do contêiner */
+  font-weight: bolder;
+  color: rgb(87, 83, 83);
+  word-break: break-word; /* Quebra palavras longas */
+}
+.cardssobre {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 200px;
+}
+.titulocards {
+  font-family: "Montserrat";
+  font-size: 30px;
+  font-weight: bold;
+}
+.image-container {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center; /* Centraliza horizontalmente */
+  align-items: center;    /* Centraliza verticalmente */
+  height: 10vh;          /* Altura da div */
+}
+
+.centralizada {
+  max-width: 100%; /* Ajusta a largura máxima */
+  max-height: 100%; /* Ajusta a altura máxima */
+  width: 180px;    /* Define a largura específica */
+  height: auto;    /* Mantém a proporção da altura */
+}
+
